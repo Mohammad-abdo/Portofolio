@@ -1,0 +1,79 @@
+div.resume{
+    h2{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        white-space: nowrap;
+        font-family:cursive;
+        @media (max-width: 576px) {
+            margin-top: 1rem;
+            svg{
+                display: none;
+            }
+        }
+    }
+    div.content{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        >div.card{
+            margin-bottom: 1.5rem;
+            >h3{
+                margin-bottom: 1.5rem;
+                text-align: center;
+                font-size: 1.5rem;
+                white-space: nowrap;
+                font-family:cursive;
+                >i{
+                    margin-right: .5rem;
+                    color: #FF9A1A;
+                }
+            }
+            >div.flex{
+                    display: flex;
+                    flex-direction: column;
+                    justify-items: center;
+                    align-items: center;
+                    margin-bottom: 1.5rem;
+                    >div.subcard{
+                        padding: .7rem;
+                        border-radius: 0.57788rem;
+                        background: #FFE3BF;
+                        margin-bottom: .5rem;
+                        width: 90% ;
+                    @media (min-width: 768px) {
+                          width: 100% ;
+                    }
+                    @media (min-width: 992px) {
+                        width: 45% ;
+                    }
+                    }
+                    @media (min-width: 768px) {
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: space-around;
+                            align-items: stretch !important;
+
+                            gap: .25rem .7rem;
+                    }
+                    @media (min-width: 992px) {
+                        justify-content: flex-start ;
+                    }
+            }
+        }
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: stretch !important;
+        }
+        @media (min-width: 992px) {
+            justify-content: space-between;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+div.content
+{
+    div.about{
+        h2{
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            white-space: nowrap;
+            font-family:cursive;
+            @media (max-width: 576px) {
+                margin-top: 1rem;
+                svg{
+                    display: none;
+                }
+            }
+        }
+        h6{
+            line-height: 1.7;
+            font-size: 1rem;
+            font-weight: 500;
+            color: rgb(66, 65, 65);
+            text-align: justify;
+
+            >span{
+                font-weight: 700;
+            }
+            >span:nth-child(2){
+               color: #0555e8;
+            }
+        }
+
+    }
+    div.services{
+        margin-top: 4rem;
+        h2{
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            white-space: nowrap;
+            font-family:cursive;
+            @media (max-width: 576px) {
+                margin-top: 1rem;
+                svg{
+                    display: none;
+                }
+            }
+        }
+        div.card-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: .7rem;
+            @media (min-width: 768px) {
+               flex-direction: row;
+               flex-wrap: wrap;
+               align-items: baseline !important;
+               justify-content: space-between;
+               align-items: center;
+            }
+            >div.card{
+                border-radius: 1.25rem;
+                // background: #edeeee;
+                box-shadow: inset 2px 1px 2px #00000070, 2px 3px 4px #4d04044b;
+                border-radius: 1rem;
+                margin-bottom: .5rem;
+                padding: .7rem;
+                width: 100%;
+
+                >h4{
+                    margin-bottom: .7rem;
+                    // white-space: nowrap;
+                    font-size: 1rem;
+                    >i{
+                        margin-right: .3rem;
+                        color: #0555e8;
+                        font-size: 1.2rem;
+                    }
+                }
+                >p{
+                    margin-bottom: .7rem;
+                    text-align:justify;
+                }
+                @media (min-width: 768px) {
+                    margin: auto;
+                    width: 90%;
+
+                 }
+                @media (min-width: 992px) {
+                    width: 45%;
+
+                 }
+            }
+
+        }
+
+    }
+}

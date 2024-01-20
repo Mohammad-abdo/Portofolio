@@ -1,0 +1,81 @@
+div.certific{
+    h2{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        white-space: nowrap;
+        font-family:cursive;
+        @media (max-width: 576px) {
+            margin-top: 1rem;
+            svg{
+                display: none;
+            }
+        }
+    }
+}
+div.certifics
+{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin-top: 3rem;
+    >div.card{
+        border-radius: 1rem;
+        padding: 1rem;
+        width: 90%;
+        >a{
+            display: block;
+            cursor: pointer;
+            >img{
+                width: 95%;
+                border-radius: 1rem;
+            }
+        }
+        >h4{
+            text-align: center;
+            color: #0555e8;
+            font-weight: 600;
+            transition: all 2s;
+            white-space: nowrap;
+        }
+        img{
+       
+          border-radius: 15px;
+          box-shadow: inset 2px 1px 2px #00000070, 2px 3px 4px #4d04044b;
+      }
+        &:hover{
+            position: relative;
+            >h4{
+                position:absolute ;
+                transform: translate(-2rem);
+                opacity: 0;
+                color: rgba(0, 0, 0, 0.722);
+            }
+            img{
+                transform: scale(1.05);
+                border-radius: 15px;
+                box-shadow: inset 2px 1px 2px #00000070, 2px 3px 4px #4d04044b;
+            }
+        }
+        @media (min-width: 768px) {
+            width: 47% ;
+
+        }
+        @media (min-width: 992px) {
+            width: 32%;
+
+        }
+    }
+    @media (min-width: 768px) {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+}

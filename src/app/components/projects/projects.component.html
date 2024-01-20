@@ -1,0 +1,35 @@
+<div class="content">
+    <!-- <nav>
+        <ul>
+            <li>Angular</li>
+            <li>JS</li>
+            <li>Responsive Design</li>
+        </ul>
+    </nav> -->
+    <h2>Projects
+        <svg xmlns="http://www.w3.org/2000/svg" width="254" height="4" viewBox="0 0 254 4" fill="none">
+            <path d="M1 1L253 3" stroke="url(#paint0_linear_33_72)" stroke-width="2" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="paint0_linear_33_72" x1="127" y1="1" x2="127" y2="3" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FE9119"/>
+                <stop offset="1" stop-color="#ED250A"/>
+              </linearGradient>
+            </defs>
+          </svg>
+    </h2>
+
+    <div class="projects">
+        <ng-container *ngFor="let project of projects">
+        <div class="card">
+            <a [href]="project.link" target="_blank"><img [src]="project.img" [alt]="project.textImg">
+                <br>
+            </a>
+            <h4>{{project.textImg}}</h4>
+            <p>
+                <a [href]="project.repo" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://drive.google.com/file/d/1Xe541EXRYOq1NFK1XEkZTEgfEyACmnAD/view?usp=sharing" target="_blank"><i class="fa-solid fa-heart"></i></a>
+            </p>
+        </div>
+    </ng-container>
+    </div>
+</div>
