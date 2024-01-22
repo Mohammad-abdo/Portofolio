@@ -1,19 +1,6 @@
 div.content
 {
-    // margin-top: 2rem;
-    // nav{
-    //     >ul{
-    //         display: flex;
-    //         flex-wrap: nowrap;
-    //         justify-content: space-evenly;
-    //         list-style: none;
-    //         font-size: 1.5rem;
-    //         font-weight: 600;
-    //         >li{
-    //             cursor: pointer;
-    //         }
-    //     }
-    // }
+
     h2{
         display: flex;
         align-items: baseline;
@@ -40,10 +27,12 @@ div.content
     gap: .5rem;
     margin-top: 3rem;
     margin: auto ;
+    transition: all 0.8s ease-in-out;
     >div.card{
-        margin:auto ;
+        margin:5px auto  ;
         border-radius: 1rem;
         padding: 1rem;
+        transition: all 0.8s ease-in-out;
         box-shadow: inset 2px 1px 2px #00000070, 2px 3px 4px #4d04044b;
         border-radius: 1.4rem;
         width: 90%;
@@ -53,6 +42,7 @@ div.content
             cursor: pointer;
             >img{
                 width: 95%;
+                height: 200px;
                 border-radius: 1rem;
             }
         }
@@ -73,6 +63,7 @@ div.content
             overflow: hidden;
             transition: all 1s;
             font-size: 2rem;
+            transition: all 0.8s ease-in-out;
             // background:rgba(253, 253, 253, 0.5);
             border-radius: 1rem;
             color: black;
@@ -82,9 +73,20 @@ div.content
             cursor: pointer;
             padding:0 2rem ;
             >a{
-                color: #0555e8;
+                color: #000000;
+                width: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 35px;
+                margin: 5px 0 !important;
+                background:white;
+                padding: 5px;
+                border-radius: 50%;
+        box-shadow: inset 2px 1px 2px #00000070, 2px 3px 4px #4d04044b;
+
                 &:hover{
-                    color: black;
+                    color: rgb(0, 55, 123);
                 }
             }
 
@@ -93,21 +95,16 @@ div.content
             position: relative;
             >h4{
                 position:absolute ;
-                transform: translate(-2rem);
+                transform: translate(2rem);
                 opacity: 0;
                 color: black;
             }
-            img{
-                transform: scale(1.1);
-            }
+
             p{
                 height: 20%;
             }
         }
-        // @media (min-width: 768px) {
-        //     width: 47% ;
 
-        // }
         @media (min-width: 992px) {
             width: 49%;
 
