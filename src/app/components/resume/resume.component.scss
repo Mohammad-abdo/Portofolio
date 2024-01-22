@@ -31,7 +31,7 @@ div.resume{
                 font-family:cursive;
                 >i{
                     margin-right: .5rem;
-                    color: #FF9A1A;
+                    color: #0555e8;
                 }
             }
             >div.flex{
@@ -43,9 +43,12 @@ div.resume{
                     >div.subcard{
                         padding: .7rem;
                         border-radius: 0.57788rem;
-                        background: #FFE3BF;
+                        background: #ffffff;
+                        box-shadow: inset 2px 1px 2px #00000070, 2px 3px 4px #4d04044b;
+                        border-radius: 1.4rem;
                         margin-bottom: .5rem;
                         width: 90% ;
+                        color: rgb(2, 33, 46);
                     @media (min-width: 768px) {
                           width: 100% ;
                     }

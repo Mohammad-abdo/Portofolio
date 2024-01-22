@@ -3,22 +3,82 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent {
-projects:any=[
-  {img:'../../../assets/images/projects/E-Commerce.png',textImg:'E-Commerce Web App',desc:'JWT , Login & Register ,Operation CRUD for Products , Intersepter , Services , HTTP , Routing , Angular Matrial , Payment Method , Add product to cart , Fillter',repo:'https://github.com/MeladKarmy/shop.git',link:'https://shop-xi-two.vercel.app/home'},
-  {img:'../../../assets/images/projects/dashboard.png',textImg:'Dashboard',desc:'NGRX Translate , Angular Matrial , Services , Binding , Life Cycle , Drag &Drop , Responsive Design ',repo:'https://github.com/MeladKarmy/Dash-Board.git',link:'https://dash-board-melad.vercel.app/'},
-  {img:'../../../assets/images/projects/todoApp.png',textImg:'To Do App',desc:'Angular Matrial , Services , Binding , Life Cycle , Reactive Forms , HTTP , Operation CRUD , Fillter ',repo:'https://github.com/MeladKarmy/To-Do-App.git',link:'https://to-do-app-hazel-pi.vercel.app/'},
-  {img:'../../../assets/images/projects/login.png',textImg:'Login & Register',desc:'Java Script , CSS , HTML , Responsive Design',repo:'https://github.com/MeladKarmy/login-and-Register.git',link:'https://meladkarmy.github.io/login-and-Register/index.html'},
-  {img:'../../../assets/images/projects/construction.png',textImg:'landing page (pure css)',desc:'HTML , CSS',repo:'https://github.com/MeladKarmy/Responsive-web-site.git',link:'https://meladkarmy.github.io/Responsive-web-site/'},
-  {img:'../../../assets/images/projects/constructionBootstrap.png',textImg:'landing page (Bootstrap)',desc:'HTML , CSS , Bootstrap',repo:'https://github.com/MeladKarmy/Bootstrap-web-site.git',link:'https://meladkarmy.github.io/Bootstrap-web-site/'},
-  {img:'../../../assets/images/projects/GEC.png',textImg:'GEC landing page',desc:'HTML , CSS , Responsive Design',repo:'https://github.com/MeladKarmy/GEC.git',link:'https://meladkarmy.github.io/GEC/'},
-  {img:'../../../assets/images/projects/pets.png',textImg:'Pets Shop landing page',desc:'HTML , CSS , Responsive Design , Media Query',repo:'https://github.com/MeladKarmy/pets-shop.git',link:'https://meladkarmy.github.io/pets-shop/'},
-  {img:'../../../assets/images/projects/OnlineShop.png',textImg:'Online Shop',desc:'HTML , CSS , Responsive Design , Media Query',repo:'https://github.com/MeladKarmy/online-shopping.git',link:'https://meladkarmy.github.io/online-shopping/'},
-  {img:'../../../assets/images/projects/cv.png',textImg:'CV Example (Web Design)',desc:'HTML , CSS ',repo:'https://github.com/MeladKarmy/Example-for-CV.git',link:'https://meladkarmy.github.io/Example-for-CV/'},
-  {img:'../../../assets/images/projects/CarRental.png',textImg:'Car Rental (Web Design)',desc:'HTML , CSS ',repo:'https://github.com/MeladKarmy/Car-Rental-Web-Design.git',link:'https://meladkarmy.github.io/Car-Rental-Web-Design/'},
-  {img:'../../../assets/images/projects/BussinesShop.png',textImg:'Business Shop (Web Design)',desc:'HTML , CSS ',repo:'https://github.com/MeladKarmy/Business-shop-Web-Design-.git',link:'https://meladkarmy.github.io/Business-shop-Web-Design-/'},
-  {img:'../../../assets/images/projects/CarWeb.png',textImg:'Cars Web (Web Design)',desc:'HTML , CSS ',repo:'https://github.com/MeladKarmy/cars-web-Design-.git',link:'https://meladkarmy.github.io/cars-web-Design-/'},
-]
+
+  projects:any =[
+    {
+      img:"../../../assets/images/myprojects/airbnb.png",
+      textImg:"Air Bnb (web Design)",
+      desc:"React js ,Bootstrap ,Tailwind css",
+      repo:"https://github.com/Mohammad-abdo/airbnb",
+      link:"https://github.com/Mohammad-abdo/airbnb"
+    },
+    {
+      img:"../../../assets/images/myprojects/portofolio.png",
+      textImg:"amazing presonal portofolio",
+      desc:"Angular js ,Scss ,css3",
+      repo:"https://github.com/Mohammad-abdo/Portofolio",
+      link:"https://portofolio-ugh1.vercel.app/About"
+
+
+    }
+    ,
+    {
+      img:"../../../assets/images/myprojects/amazon.png",
+      textImg:"ecomerce app ",
+      desc:"next js ,tailwind css ,typescript",
+      repo:"https://github.com/Mohammad-abdo/Amazon",
+      link:"https://github.com/Mohammad-abdo/Amazon"
+
+
+    }
+    ,
+    {
+      img:"../../../assets/images/myprojects/kasper.png",
+      textImg:"trade app ",
+      desc:"Html5,Css3 ",
+      repo:"https://github.com/Mohammad-abdo/KASPER.githup.io",
+      link:"https://kasper-githup-io.vercel.app/"
+
+
+    },
+    {
+      img:"../../../assets/images/myprojects/lavtic.png",
+      textImg:"Social media app ",
+      desc:"Html5,Css3 ,js ",
+      repo:"https://github.com/Mohammad-abdo/lavtic",
+      link:"https://lavtic.vercel.app/"
+    },
+    {
+      img:"../../../assets/images/myprojects/netflix.png",
+      textImg:"Netflix landing page  (Web Ddesign) ",
+      desc:"Html5,Css3 ,js ",
+      repo:"https://github.com/Mohammad-abdo/Netflix",
+      link:"https://netflix-1-two.vercel.app/"
+    },
+    {
+      img:"../../../assets/images/myprojects/meat_moot.png",
+      textImg:"Meat Moot  (Web Ddesign) ",
+      desc:"nextjs ,Tailwind Css ,React js ,typescript ",
+      repo:"https://github.com/Mohammad-abdo/Meat-",
+      link:"https://meat-murex.vercel.app/home"
+    },
+    {
+      img:"../../../assets/images/myprojects/cimaclop.png",
+      textImg:"Movie App clone  (Web Ddesign) ",
+      desc:"Html5 ,Css 3, js  ",
+      repo:"https://github.com/Mohammad-abdo/Cima_Clop",
+      link:"https://cima-clop.vercel.app/"
+    },
+    {
+      img:"../../../assets/images/myprojects/movie-app.png",
+      textImg:"Movie App clone  (Web Ddesign) ",
+      desc:"React js ,Bootstrap,sass ,reduix   ",
+      repo:"https://github.com/Mohammad-abdo/Movies-land",
+      link:"https://github.com/Mohammad-abdo/Movies-land"
+    }
+  ]
+
 }
