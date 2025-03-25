@@ -8,6 +8,42 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
 
   projects:any =[
+
+    {
+      img:"../../../assets/images/myprojects/intelaqah.png",
+      textImg:"Intelaqah (Wordpress Site)",
+      desc:"wordpress ,Seo , Hostinger",
+      repo:"#",
+      link:"https://intelaqah-vet.com/"
+    },
+    {
+      img:"../../../assets/images/myprojects/Create-X.png",
+      textImg:"Create-X(Wordpress Site )",
+      desc:"wordpress ,Seo , Hostinger",
+      repo:"#",
+      link:"https://cx.sa.com"
+    },
+    {
+      img:"../../../assets/images/myprojects/Elemarat-Alarabia.png",
+      textImg:"Elemarat-Alarabia (Wordpress Site )",
+      desc:"wordpress ,Seo , Hostinger",
+      repo:"#",
+      link:"https://alemarat-alarabia.com/"
+    },
+    {
+      img:"../../../assets/images/myprojects/remaba.png",
+      textImg:"Remaba sloution (Wordpress Site )",
+      desc:"wordpress ,Seo , Hostinger",
+      repo:"#",
+      link:"https://remabasolution.com/"
+    },
+    {
+      img:"../../../assets/images/myprojects/musahim .png",
+      textImg:"Musahem Tech (Wordpress Site )",
+      desc:"wordpress ,Seo , Hostinger",
+      repo:"#",
+      link:"https://musahemtech.com"
+    },
     {
       img:"../../../assets/images/myprojects/airbnb.png",
       textImg:"Air Bnb (web Design)",
